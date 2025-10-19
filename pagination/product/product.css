@@ -1,0 +1,252 @@
+
+.body__section
+{
+    flex-direction: row;
+    column-gap: 40px;
+}
+.product__images
+{
+    display: flex;
+    flex-direction: column;
+}
+.product__main-image
+{
+   width: 560px;
+   height: 560px;   
+}
+.products__down-images
+{
+    display: flex;
+    flex-direction: row;
+}
+.product__down-image
+{
+    width: 60px;
+    height: 60px;
+    margin: 4px 5px 0px 0px ;
+}
+.product__info
+{
+    display: flex;
+    flex-direction: column;
+    place-self: flex-start;
+    margin-top: 80px;
+}
+.product__name
+{
+    font-family:Arial, Arial, sans-serif;
+    font-size:24px;
+    font-weight:700;
+    margin-bottom: 18px;
+}
+.product__price
+{
+    font-family:Arial, Arial, sans-serif;
+    font-size:20px;
+    font-weight:400;
+    margin-bottom: 10px;
+}
+.products_select
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6px;
+}
+.product__select
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.product__select-info
+{
+    font-family:Arial, Arial, sans-serif;
+    font-size:14px;
+    font-weight:300;
+    margin-bottom: 10px;
+}
+.product__select
+{
+    width: 150px;
+    height: 28.18px;
+    border-radius: 5px;
+    border-color: rgb(221, 221, 221);
+}
+.product__buy-btn
+{
+    width: 92.07px;
+    height: 45px;
+    margin-top: 30px;
+    font-family:Arial, Arial, sans-serif;
+    font-size:14px;
+    font-weight:700;
+    color: #ffffff;
+    border-radius: 5px;
+    background-color: #000000;
+    cursor: pointer;
+}
+.inputs__write
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.input__write
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.input__write > span
+{
+    margin-bottom: 0px;
+}
+.product__input
+{
+    width: 153px;
+    height: 25px;
+    color: #000000;
+    border: 1px solid #000000;
+    font-family: 'Arial', Arial, sans-serif, Arial, sans-serif;
+    outline: none;
+}
+.popup__bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    opacity: 0; 
+    pointer-events: none;
+    transition: 0.5s all;
+}
+
+.popup__bg.active { 
+    opacity: 1; 
+    pointer-events: all;
+    transition: 0.5s all;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 400px;
+    padding: 25px;
+    transition: 0.5s all;
+}
+
+.popup.active { 
+    transform: translate(-50%, -50%) scale(1); 
+    transition: 0.5s all;
+}
+
+
+.close__popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.popup label {
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.popup .label__text {
+    font-family:Arial, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #cfd0d3;
+    margin-bottom: 5px;
+}
+
+.popup input {
+    height: 45px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #cfd0d3;
+}
+
+.popup input:focus {
+    border-bottom: 1px solid #000000;
+}
+
+.popup input:focus + .label__text {
+    color: #000000;
+}
+
+.popup textarea {
+    resize: none;
+    width: 100%;
+    height: 150px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #cfd0d3;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.popup textarea:focus {
+    border-bottom: 1px solid #000000;
+}
+
+.popup textarea:focus + .label__text {
+    color: #000000;
+}
+
+.popup button {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    border: 2px solid #000000;
+    background: #000000;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s all;
+}
+
+.popup button:hover {
+    background: #fff;
+    color:#000000;
+    transition: 0.5s all;
+}
+
+@media screen and (max-width:800px) {
+    .body__section
+    {
+        flex-direction: column;
+    }
+    .product__main-image {
+        width: 100%;
+        height: 100%;
+    }
+    .product__info
+    {
+        place-self: auto;
+        margin-top: 40px;
+    }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}

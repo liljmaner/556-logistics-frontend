@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="../main/index_css.css">
+      <link rel="stylesheet" href="./product.css">
+    </head>
+    <body class="body">
+        <div class="body__container-div">  
+            <section class="header__section">
+                <img id="logo-img" class="logo-img" src="../../helpers/images/test2.gif"/>
+            </section>
+            <section class="body__section">
+               <div  id="product__images" class="product__images">
+                   <!-- <img  src="../../helpers/images/footbolka.png" class="product__main-image" /> -->
+                   <!-- <div class="products__down-images">
+                       <img src="../../helpers/images/footbolka.png"  class="product__down-image" />
+                       <img src="../../helpers/images/footbolka.png"  class="product__down-image" />
+                       <img src="../../helpers/images/footbolka.png"  class="product__down-image" />
+
+                   </div> -->
+               </div>
+               <div class="product__info">
+                    <span id="product__name" class="product__name">Tee Glow GROUPIE</span>
+                    <span id="product__price" class="product__price">3 990 р.</span>
+                    <!-- <div class="product__select">
+                        <span class="product__select-info">Color</span>
+                        <select name="color" class="product__select" >
+                            <option value="petersburg">Black</option>
+                            <option value="samara">White</option>
+                        </select>
+                    </div> -->
+                    <div class="products_select">
+                        <div  class="product__select">
+                            <span class="product__select-info">Size</span>
+                            <select  id="product__size__select"  name="size" class="product__select" >
+                            </select>
+                        </div>
+                    </div>
+                    <div id="inputs__write" class="inputs__write">
+                    </div>
+                    <button class="product__buy-btn">BUY</button>
+               </div>
+            </section>
+        </div>
+        <div class="popup__bg"> 
+            <div class="popup">
+               <svg class="close__popup" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#00000" d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+                <label>
+                    <input type="text" name="name">
+                    <div class="label__text">
+                        Ф.И.О
+                    </div>
+                </label>
+                                <label>
+                    <input type="text" name="name">
+                    <div class="label__text">
+                        Ваш Email
+                    </div>
+                </label>
+                                <label>
+                    <input type="text" name="name">
+                    <div class="label__text">
+                        Ваш номер телефона
+                    </div>
+                </label>
+                <label>
+                    <input type="text" name="name">
+                    <div class="label__text">
+                        Ваш полный адрес
+                    </div>
+                </label>
+                <label>
+                    <input type="text" name="name">
+                    <div class="label__text">
+                        Ваш индекс
+                    </div>
+                </label>
+                <label>
+                    <input type="tel" name="tel">
+                    <div class="label__text">
+                        Ваш телеграмм
+                    </div>
+                </label>
+                <button type="submit">Отправить</button>
+
+            </div>
+            
+        </div>  
+    </body>
+    <script type="module" src="./main.js"></script>
+</html>
